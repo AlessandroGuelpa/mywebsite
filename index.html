@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body onload="myFunction()">
+    <!-- <div id="load" class="loader">
+      <div class="loader-inner">
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+      </div>
+    </div> -->
+    <script>
+      function sleep(ms) {
+        return new Promise((resolve) => setTimeout(resolve, ms));
+      }
+      function myFunction() {
+        setTimeout(() => {
+          var v = (document.getElementById("load").style.opacity = "0");
+        }, "3800");
+        setTimeout(() => {
+          var z = (document.getElementById("load").style.display = "none");
+        }, "4300");
+      }
+    </script>
+
+    <div class="left">
+      <div class="content">
+        <div class="left_img"><img src="logo.png" /></div>
+        <div class="name"><p>Alessandro Guelpa</p></div>
+        <div class="job">
+          <p>
+            <a href="#">Junior Front-end Developer </a>in <strong>Gesca</strong>
+          </p>
+        </div>
+        <div class="link"><a href="#">Home</a></div>
+        <div class="link"><a href="#studies">Studies</a></div>
+        <div class="link"><a href="#job">Job</a></div>
+        <div class="link"><a href="#code">Some Code</a></div>
+        <div class="link"><a href="#interest">interest</a></div>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="page">
+        <div class="presentation">
+          <a>This is <span style="text-decoration: line-through">me</span></a>
+          <p style="font-size: 25px">Or one of my multiple personality</p>
+          <br />
+          <p>Paragrafo di introduzione di me stesso.</p>
+        </div>
+        <div id="studies" class="studies">
+          <a href="#">Studies</a><br />
+          <div
+            class="studies_milestones"
+            style="
+              transform: rotate(-15deg);
+              margin-left: 20%;
+              background: #ffc;
+            "
+          >
+            <p class="p_title">Diploma Informatico</p>
+            <p class="p_description">
+              Ho conseguito il diploma come perito informatico nel 2021,
+              appronfondendo anche la parte di elettronica (arduino).
+            </p>
+            <p class="competenze_acquisite">
+              C, C++, HTML&CSS, JAVASCRIPT, PHP, SQL E CREAZIONE-GESTIONE DELLE
+              RETI.
+            </p>
+          </div>
+          <div
+            class="studies_milestones"
+            style="
+              transform: rotate(12deg);
+              margin-left: 60%;
+              margin-top: -150px;
+              background: #cfc;
+            "
+          >
+            <p class="p_title">HARVARD CS50W</p>
+            <p class="p_description">
+              Questo corso mi ha dato la possibilità di sviluppare Applicazioni
+              Web usando Django come Framework. Il corso si basava sulla
+              realizzazione di progetti sempre più complessi per acquisire tutte
+              le competenze.
+            </p>
+            <p class="competenze_acquisite">
+              HTML&CSS, PYTHON, JAVASCRIPT, SQL E UTILIZZO GITHUB.
+            </p>
+          </div>
+          <div
+            class="studies_milestones"
+            style="
+              transform: rotate(-8deg);
+              margin-left: 30%;
+              margin-top: -100px;
+              background: #ccf;
+            "
+          >
+            <p class="p_title">Microsoft DEV276x</p>
+            <p class="p_description">
+              Questo corso mi ha dato la possibilità di avvicinarmi al mondo di
+              Java, seguendo delle lezioni introduttive.
+            </p>
+            <p class="competenze_acquisite">INTRODUZIONE A JAVA.</p>
+          </div>
+        </div>
+        <div id="job" class="Job">
+          <div class="Gesca">
+            <div class="Azienda_Ruolo"></div>
+            <div class="competenze_acquisite"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -182,11 +182,11 @@ a:link {
 }
 .studies {
   margin-top: 100px;
-  height: 110vh;
 }
-.studies a {
+.title {
   font-size: 40px;
   font-weight: bolder;
+  text-decoration: underline !important;
 }
 .studies a:link {
   text-decoration: none;
@@ -215,12 +215,6 @@ a:link {
   font-size: 30px;
   margin-top: -30px;
 }
-.competenze_acquisite {
-  font-size: 25px;
-  font-weight: bolder;
-
-  margin-top: -20px;
-}
 .underline::after {
   content: "";
   width: 0px;
@@ -230,7 +224,30 @@ a:link {
   transition: 300ms;
   margin: auto;
 }
-
 .underline:hover::after {
   width: 55px;
+}
+.Job {
+  margin-top: 100px;
+  text-align: center;
+  background-color: aliceblue;
+}
+.Gesca {
+  width: 100%;
+  font-size: 20px;
+}
+.Ruolo,
+.competenze {
+  font-size: 23px;
+  padding: 20px 50px 50px 50px;
+}
+.competenze_acquisite {
+  font-size: 27px;
+  font-weight: bolder;
+}
+b {
+  font-family: "Reenie Beanie";
+  font-size: 27px;
+  color: blue;
+  text-decoration: underline;
 }
